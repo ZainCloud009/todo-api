@@ -5,7 +5,7 @@ from fastapi import FastAPI, HTTPException, Query, status
 from pydantic import BaseModel, Field
 
 app = FastAPI(
-    title="To-Do List API",
+    title="To-Do List APP API",
     description="A lightweight, containerized To-Do List API built for DevOps & Cloud demonstration.",
     version="1.0.0",
 )
