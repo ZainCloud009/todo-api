@@ -25,6 +25,7 @@ class TodoUpdate(BaseModel):
     title: Optional[str] = Field(default=None, min_length=1, max_length=200)
     description: Optional[str] = Field(default=None, max_length=1000)
     completed: Optional[bool] = Field(default=None)
+    
 
 
 class TodoResponse(BaseModel):
@@ -179,3 +180,7 @@ def delete_todo(todo_id: int):
             )
         del _todos[todo_id]
         return None
+    
+
+
+
